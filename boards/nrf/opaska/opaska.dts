@@ -1,0 +1,41 @@
+/dts-v1/;
+
+#include <nordic/nrf52840_qfaa.dtsi>
+#include <nordic/nrf52840_partition.dtsi>
+#include "opaska-pinctrl.dtsi"
+
+&gpio0 { status = "okay"; };
+&gpio1 { status = "okay"; };
+&gpiote { status = "okay"; };
+
+// &uart0 {
+// 	status = "disabled";
+// 	current-speed = <115200>;
+// 	pinctrl-0 = <&uart0_default>;
+// 	pinctrl-1 = <&uart0_sleep>;
+// 	pinctrl-names = "default", "sleep";
+// };
+
+&i2c0 {
+	status = "okay";
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-1 = <&i2c0_sleep>;
+	pinctrl-names = "default", "sleep";
+	clock-frequency = <I2C_BITRATE_STANDARD>;
+};
+
+&i2c1 {
+	status = "okay";
+	pinctrl-0 = <&i2c1_default>;
+	pinctrl-1 = <&i2c1_sleep>;
+	pinctrl-names = "default", "sleep";
+	clock-frequency = <I2C_BITRATE_STANDARD>;
+};
+
+// &spi0 {
+// 	status = "disabled";
+// 	pinctrl-0 = <&spi0_default>;
+// 	pinctrl-1 = <&spi0_sleep>;
+// 	pinctrl-names = "default", "sleep";
+// };
+

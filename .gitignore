@@ -1,55 +1,38 @@
-# Prerequisites
-*.d
+# Zephyr / west build outputs
+/build/
+/build-*/
+/zephyr-build/
+/*/build/
+/*/build-*/
+/*/zephyr-build/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# CMake / Ninja
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+.ninja_deps
+.ninja_log
+build.ninja
+rules.ninja
+.ninja/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Zephyr generated files (często w build/)
+zephyr/include/generated/
+zephyr/.config
+zephyr/.config.old
+zephyr/autoconf.h
+zephyr/zephyr.dts
+zephyr/zephyr.dts.pre
+zephyr/zephyr.dts_compiled
+zephyr/zephyr.elf
+zephyr/zephyr.hex
+zephyr/zephyr.bin
+zephyr/zephyr.uf2
+zephyr/zephyr.map
+zephyr/zephyr.lst
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# West workspace (opcjonalnie, jeśli masz to w tym repo)
+.west/
