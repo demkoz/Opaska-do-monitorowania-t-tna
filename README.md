@@ -5,11 +5,8 @@ Repozytorium zawiera kod źródłowy oraz pliki konfiguracyjne prototypu opaski 
 
 
 ## Płytka drukowana
-Widok z góry:
-![Opaska-do-monitorowania-tetna](<./Zrzut ekranu 2025-11-25 161712.png>)
-
-Widok z dołu:
-![Opaska-do-monitorowania-tetna](<./Zrzut ekranu 2025-11-25 162051.png>)
+Widok z góry i z dołu:
+![Opaska-do-monitorowania-tetna](<./obraz.png>)
 
 ## Struktura projektu
 
